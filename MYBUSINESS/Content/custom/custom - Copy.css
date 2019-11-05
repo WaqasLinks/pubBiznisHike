@@ -1,0 +1,677 @@
+﻿/*body {
+    overflow-y: hidden;
+}*/
+body {
+    color: #404E67;
+    background: #F5F7FA;
+    font-family: 'Open Sans', sans-serif;
+    overflow:auto;
+}
+.container {
+    height:100%;
+
+}
+    .container .fixed {
+    position:inherit;
+    }
+.container .table-wrapper {
+ 
+    position: relative;
+    top: -500px;
+    left: 30px;
+    width:600px;
+}
+.items-with-barcode {
+    position: relative;
+
+    top: 150px;
+    left: 0px;
+    background: white;
+    width: 550px;
+    height: 300px;
+    moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 5px #ccc;
+}
+
+.name-and-address {
+    
+    position: relative;
+    top: 120px;
+    left: 0px;
+    min-width: 300px;
+    width: 550px;
+    height: 100px;
+    background: white;
+    padding-left: 30px;
+    padding-top: 10px;
+    moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 5px #ccc;
+}
+
+.container .name-and-address .labels {
+    position: relative;
+    top: 5px;
+    left: 20px;
+    width: 50px;
+    text-align: right;
+}
+
+.scanning-area .item-search-with-title {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 0px;
+    height: 50px;
+}
+
+
+
+.item-search-with-title input {
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    border-color: lightgray;
+    background: white;
+}
+
+.item-search-with-barcode input {
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    border-color: lightgray;
+    background: white;
+}
+
+.container .name-and-address .fields {
+    position: absolute;
+    top: 5px;
+    cell-padding: 5px;
+    left: 200px;
+}
+
+.container .col-sm-9 .row button {
+    border-radius: 25px;
+}
+
+.container .name-and-address .fields input:nth-child(1) {
+    border-radius: 5px;
+    left: -150px;
+    height: 35px;
+    border-color: lightgrey;
+    background: rgba(0,0,0,.05);
+}
+
+.container .name-and-address .fields a {
+    positoin: relative;
+}
+
+.container .name-and-address .fields .address {
+    postion: absolute;
+    top: 0px;
+    height: 35px;
+    border-radius: 5px;
+    border-color: lightgray;
+    background: rgba(0,0,0,.05);
+}
+
+.tablescroll {
+    height: 300px;
+    width:550px;
+    overflow-y: auto;
+    overflow-x:hidden;
+}
+.item-search-with-title .seachpro {
+    width:400px;
+}
+.items-with-barcode .search-result {
+    position: relative;
+    top: 70px;
+    background-color: rgba(0,0,0,.05);
+    max-width: 750px;
+    height: 38vh;
+    overflow: auto;
+}
+
+.col-sm-offset-5 b {
+    text-shadow: 2px 2px lightgrey;
+}
+
+.items-width-barcode .srolldiv {
+    height: 100%;
+}
+
+.saleOrderTable {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.05);
+    max-width: 750px;
+    height: 50vh;
+    scrollbar-face: none;
+    overflow: auto;
+}
+
+
+
+.remaining-elements {
+    position: absolute;
+    top: 400px;
+    left: 350px;
+}
+
+    .remaining-elements select {
+        position: relative;
+        left: -15px;
+        width: 205px;
+    }
+
+    .remaining-elements textarea {
+        height: 100px;
+        border-radius: 1px;
+    }
+
+    .remaining-elements .payment-textarea {
+        border-radius: 0px;
+        width: 205px;
+        height: 50px;
+    }
+
+    .remaining-elements .remarks {
+        position: relative;
+        top: -20px;
+        width: 205px;
+        height: 50px;
+    }
+/**/
+/**/
+.salerdernavigation {
+    position: relative;
+    top: -400px;
+    left: 0px;
+    width: 550px;
+    height: 100px;
+    background: #fff;
+    padding-left: 10px;
+    padding-top: 10px;
+    moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 5px #ccc;
+}
+
+.back-list {
+    position: relative;
+    top: 1100px;
+}
+#srch {
+    position: absolute;
+    top: 10px;
+    left: 200px;
+    background-color: #34C3E5;
+}
+#searchpro {
+    width: 300px;
+}
+#delete0 {
+    border: 0;
+    background-color:transparent;
+}
+@media (max-width:991px) {
+  
+    .container .table-wrapper .table-condensed .tablescroll #selectedProducts {
+        width: 590px;
+    }
+    #searchpro {
+        width: 200px;
+    }
+    .salerdernavigation {
+        position: relative;
+        top: 820px;
+        left: 30px;
+        z-index: 2;
+        width: 450px;
+        height: 100px;
+    }
+
+        .salerdernavigation .row .icon {
+            position: absolute;
+            
+            left: 0px;
+            top: 0px;
+        }
+  
+    .salerdernavigation a {
+        position: absolute;
+        top:10px;
+        left: 100px;
+    }
+    .salerdernavigation input[name="searchbox"] {
+        position: relative;
+        left: 100px;
+        border-radius: 0px;
+        border: solid 1px #000;
+        width: 130px;
+    }
+
+
+
+
+    .container .name-and-address {
+        position: relative;
+        top: 870px;
+        left: 30px;
+        width: 450px;
+        height: 100px;
+    }
+
+        .container .name-and-address .fields a {
+            position: relative;
+            left: 20px;
+            top: 38px;
+        }
+
+        .container .name-and-address .labels .customeradd {
+            
+        }
+
+    .items-with-barcode .search-result {
+        display: none;
+    }
+
+    .container .name-and-address .labels .customername {
+        position: relative;
+        left: -50px;
+    }
+        .container .name-and-address .fields a{
+            position:absolute;
+   
+        } 
+        
+        .customeradd {
+            position: relative;
+            top: 0px;
+        }
+
+    .fields .Newcustomer {
+        position: absolute;
+        left: -190px;
+        top: 35px;
+    }
+
+   
+
+    .items-with-barcode {
+        position: relative;
+        top: 680px;
+        left: 30px;
+        background: white;
+        width: 450px;
+        height: 70px;
+        moz-box-shadow: 3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow: 3px 3px 5px 5px #ccc;
+      
+    }
+
+    .remaining-elements {
+        position: absolute;
+        top: 450px;
+        left: 320px;
+    }
+
+    .remaining-elements .payment-textarea {
+        border-radius: 0px;
+        width: 205px;
+        height: 50px;
+    }
+
+    .remaining-elements .remarks {
+        position: relative;
+        top: -20px;
+        width: 205px;
+        height: 50px;
+    }
+    .container .table-wrapper {
+       
+        positoin: relative;
+        top: -250px;
+        left: 0px;
+        width: 600px;       
+        moz-box-shadow: 3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow: 3px 3px 5px 5px #ccc;
+    }
+    .salerdernavigation .row{
+        position:relative;
+        top:0px;
+    }
+
+        .salerdernavigation .row .icon button {
+            border-radius: 0;
+            position: relative;
+            top: 0px;
+            left: 10px;
+       
+            height: 30px;
+            width: 60px;
+            border: none;
+        }
+    #modal-open{
+    display:block;
+    position:absolute;
+    top:38px;
+    left:-80px;
+    }
+    #or {
+    display:none;
+    }
+    #box {
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    opacity: 0;
+    visibility: hidden;
+}
+    .saveprint {
+        position: relative;
+        top: -100px;
+        left: 250px;
+    }
+
+        .saveprint button {
+            border-radius: 1px;
+            width: 210px;
+            height: 50px;
+        }
+}
+
+.salerdernavigation input[name="searchbox"] {
+    position: absolute;
+    top: 15px;
+    border-radius: 0px;
+    border: solid 1px #grey;
+    width: 130px;
+}
+
+.salerdernavigation #srch {
+    border-radius: 20px;
+    color: white;
+    font-size: 0.9em;
+    background-color: #22C1EA;
+    position: relative;
+    left: 230px;
+    width: 100px;
+    height: 50px;
+    top: 0px;
+}
+
+.salerdernavigation .icon {
+    position: relative;
+    top: 0px;
+    left: 0px;
+
+}
+
+.salerdernavigation .row .icon .btn {
+    border-radius: 0;
+    position: relative;
+    top: 0px;
+    left: 10px;
+    height: 30px;
+    width: 60px;
+    border: none;
+    background-color: #34C3E5;
+}
+    .salerdernavigation .row .icon .btn:hover {
+        background-color: #27ADD6;
+    }
+    .dialog-CreateProduct .form-horizontal .table-title .row .col-sm-8 {
+        position: absolute;
+        top: 390px;
+        left: 50px;
+    }
+
+.table-wrapper {
+    positoin: absolute;
+    top:50px;
+    left:-50px;
+    float: right;
+    width: 700px;
+    background: #fff;
+    padding: 20px;
+    moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 5px #ccc;
+}
+
+.table-title {
+    padding-bottom: 0px;
+    margin: 0 0 0px;
+}
+
+    .table-title h2 {
+        margin: 6px 0 0;
+        font-size: 22px;
+    }
+
+.saveprint {
+    position: relative;
+    top: -100px;
+    left: 320px;
+}
+
+    .saveprint button {
+        border-radius: 1px;
+        width: 210px;
+        height: 50px;
+    }
+
+.table-title .add-new {
+    float: right;
+    height: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: none;
+    min-width: 100px;
+    border-radius: 50px;
+    line-height: 13px;
+}
+
+    .table-title .add-new i {
+        margin-right: 4px;
+    }
+
+table.table {
+
+}
+
+    table.table tr th, table.table tr td {
+        border-color: #e9e9e9;
+    }
+
+    table.table th i {
+        font-size: 13px;
+        margin: 0 5px;
+        cursor: pointer;
+    }
+
+    table.table th:last-child {
+        width: 100px;
+    }
+
+    table.table td a {
+        cursor: pointer;
+        display: inline-block;
+        margin: 0 5px;
+        min-width: 24px;
+    }
+
+        table.table td a.add {
+            color: #27C46B;
+        }
+
+        table.table td a.edit {
+            color: #FFC107;
+        }
+
+        table.table td a.delete {
+            color: #E34724;
+        }
+
+    table.table td i {
+        font-size: 19px;
+    }
+
+    table.table td a.add i {
+        font-size: 24px;
+        margin-right: -1px;
+        position: relative;
+        top: 3px;
+    }
+
+    table.table .form-control {
+        height: 32px;
+        line-height: 32px;
+        box-shadow: none;
+        border-radius: 2px;
+    }
+
+        table.table .form-control.error {
+            border-color: #f50000;
+        }
+
+    table.table td .add {
+        display: none;
+    }
+
+.myPosition {
+    position: absolute;
+    right: 1000px; /* use a length or percentage */
+}
+
+.borderless td, .borderless th {
+    border-width: 0;
+}
+
+/*.table-borderless td,
+    .table-borderless th,
+    .table-borderless tr {
+        border: 0;
+    }*/
+
+/*.table.no-border tr td, .table.no-border tr th {
+        border-width: 0;
+    }*/
+
+table.borderless {
+    border: none;
+    /*margin-top: 20px;*/
+}
+
+    table.borderless > thead > tr > th {
+        border: none;
+    }
+
+    table.borderless > tbody > tr > td {
+        border: none;
+    }
+
+
+/*loading*/
+
+/*loading*/ /*input[readonly] {
+        background-color: transparent;
+        border: 0;
+        font-size: 1em;
+    }*/
+
+input[readonly].classBGcolor {
+    background-color: transparent;
+    /*border: 0;
+        font-size: 1em;*/
+}
+
+input[readonly].classBorder0 {
+    background-color: transparent;
+    border: 0;
+    /*font-size: 1em;*/
+}
+
+/*for modal*/
+/*#productsTable tr:hover {
+        background-color: yellow;
+    }*/
+tr.normal td {
+    color: black;
+    background-color: white;
+}
+
+tr.highlighted td {
+    color: white;
+    background-color: red;
+}
+
+input[type=text]::-ms-clear {
+    display: none;
+}
+
+.row input[type="button"] {
+    position: sticky;
+    top: 0px;
+    left: 10px;
+    background: #71CCD9;
+}
+
+.form-group {
+    position: relative;
+    left: 70px;
+}
+
+.col-md-9 .checkbox {
+    position: relative;
+    left: 25px;
+}
+#box {
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 110;
+    opacity: 0;
+    visibility: hidden;
+}
+    #box:target {
+        opacity: 1;
+        visibility: visible;
+        
+    }
+.box_content {
+    display: block;
+    position: relative;
+    top: 200px;
+    left: 500px;
+    width: 500px;
+    height: 500px;
+    background: white;
+    border-radius: 5px;
+}
+.modal_close {
+    color: #363636;
+    font-size: 2em;
+    position: absolute;
+    top: 2px;
+    right: 12px;
+}
+.container .table-wrapper .table-condensed .tablescroll #selectedProducts {
+    width: 590px;
+}
+/*@media print {
+    .header-print {
+        display: table-header-group;
+}*/
